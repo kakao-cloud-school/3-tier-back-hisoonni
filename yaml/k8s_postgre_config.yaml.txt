@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgresql-config
+data:
+  host: "10.108.1.88" # 나중에 서비스 클러스터 Ip 구성
+  port: "5432"
+  database: "postgres"
+  user: "postgres"
