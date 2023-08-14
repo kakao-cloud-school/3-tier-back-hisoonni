@@ -136,7 +136,7 @@ class TbBoard(models.Model):
     board_title = models.CharField(max_length=30)
     board_content = models.CharField(max_length=20, blank=True, null=True)
     board_writer = models.CharField(max_length=40)
-    create_date = models.DateTimeField(default=timezone.now())
+    create_date = models.DateTimeField(default=timezone.now)
 
     class Meta:
         managed = False
@@ -149,7 +149,7 @@ class TbComment(models.Model):
     comment_depth = models.DecimalField(max_digits=65535, decimal_places=65535)
     comment_title = models.CharField(max_length=40)
     comment_writer = models.CharField(max_length=40)
-    create_date = models.DateTimeField(default=timezone.now())
+    create_date = models.DateTimeField(default=timezone.now)
 
     class Meta:
         managed = False
